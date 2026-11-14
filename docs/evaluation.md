@@ -1,6 +1,6 @@
 # Mood Detection Evaluation
 
-Status: keyword fallback evaluated on 2026-11-12. The LLM pipeline evaluation runs once `backend/src/services/emotionService.js` is merged.
+Status: keyword fallback evaluated on 2026-11-12. `emotionService.js` is merged; the LLM pipeline run needs a Gemini key in `backend/.env` (`npm run eval:llm`).
 
 ## Summary
 

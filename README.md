@@ -402,26 +402,29 @@ npx expo start
 
 ## 10. 2-Day MVP Development Tracker
 
+*Status as of 15 Nov 2026. Backend: 41 tests pass. App: TypeScript strict check passes.*
+
 ### Day 1: Backend, AI & Data Pipeline
 - [x] Initial project scaffolding & unified directory tree
 - [x] Supabase PostgreSQL schema with RLS policies
 - [x] Curated 120-song seed catalog (60 Hindi, 60 English)
-- [ ] Supabase JWT authentication middleware
-- [ ] LLM Emotion Detection Service with Hinglish support
+- [x] Supabase JWT authentication middleware
+- [x] LLM Emotion Detection Service with Hinglish support (Gemini, 3 s timeout, keyword fallback)
 - [x] Keyword fallback rule engine (< 50ms fallback)
-- [ ] Recommendation scoring & dislike exclusion service
+- [ ] Recommendation scoring & dislike exclusion service (`/api/recommendations`, `/api/feedback` not yet merged)
 - [x] Hinglish test dataset (144 labelled samples, 3 languages) and evaluation harness ([docs/evaluation.md](docs/evaluation.md))
 - [ ] LLM pipeline reaches ≥ 80% accuracy on the benchmark (`npm run eval:llm`)
 
 ### Day 2: Mobile UI, Integration & Polish
-- [ ] Supabase Auth flow (Login, Sign-Up, Preferences Onboarding)
-- [ ] Home Screen with quick mood chips & history teaser
-- [ ] Mood AI screen with conversational text input & loading states
-- [ ] Mood confirmation & manual mood correction modal
-- [ ] Recommendation results view with Spotify/YouTube external links
-- [ ] Like, dislike, and skip feedback recording
-- [ ] "My Mood" history dashboard with weekly distribution counts
-- [ ] End-to-end integration testing & performance tuning (< 3s response)
+- [x] Supabase Auth flow (Login, Sign-Up, Preferences Onboarding)
+- [x] Home Screen with quick mood chips & history teaser
+- [x] Mood AI screen with conversational text input & loading states
+- [x] Mood confirmation & manual mood correction modal
+- [ ] Recommendation results view with YouTube links (app screen done; needs the backend endpoint)
+- [ ] Like, dislike, and skip feedback recording (app side done; needs the backend endpoint)
+- [x] "My Mood" history dashboard with weekly distribution counts and delete
+- [ ] End-to-end integration testing & performance tuning (< 3s response), using [docs/test-plan.md](docs/test-plan.md)
+- [x] Profile screen: edit preferences and sign out
 
 ---
 
